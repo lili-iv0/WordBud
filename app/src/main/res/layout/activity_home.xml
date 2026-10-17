@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="283dp"
+        android:layout_height="161dp"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/screenshot_2025_11_06_175228" />
+
+    <!-- username box -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/screenshot_2025_11_07_152520" />
+
+    <!-- username -->
+    <TextView
+        android:id="@+id/usernamePlaceHolder"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="-87dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <!-- Activity cards-->
+    <ImageView
+        android:id="@+id/wordFrenzyView"
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="27dp"
+        app:srcCompat="@drawable/screenshot_2025_11_07_090858" />
+
+    <ImageView
+        android:id="@+id/mindFlipView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/screenshot_2025_11_07_090515" />
+
+    <ImageView
+        android:id="@+id/vocabVistaView"
+        android:layout_width="wrap_content"
+        android:layout_height="206dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/screenshot_2025_11_07_090458" />
+
+    <!--   Navigation     -->
+    <ImageView
+        android:id="@+id/navigationView"
+        android:layout_width="389dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-5dp"
+        app:srcCompat="@drawable/screenshot_2025_11_07_155215" />
+
+    <!-- buttons pang lipat act-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeNavBtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="7dp"
+            android:alpha=".5"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/addWordNavBtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="1dp"
+            android:alpha=".5"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/wordListNavBtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="1dp"
+            android:alpha=".5"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/profileNavbtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="1dp"
+            android:alpha=".5"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

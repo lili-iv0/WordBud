@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white"
+    tools:context=".VocabVistaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:background="@drawable/vocabbg"
+        android:layout_marginTop="23dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop= "-850dp"
+        android:orientation="vertical">
+
+    <!-- 🟩 Scrollable Card Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:layout_marginLeft="-5dp"
+        android:overScrollMode="never"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="150dp"> <!-- prevents scroll overlaying navigation -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="28dp"
+            android:elevation="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="1dp"
+            android:clipToOutline="true">
+
+            <!-- 🟠 1st Box -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"> <!-- reduced spacing -->
+
+                <ImageView
+                    android:id="@+id/btnFirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/boxcontainer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/wordText1"
+                        android:text="Oblivious"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginRight="100sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/defText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Not knowing or not paying attention to something."
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 🟠 2nd Box -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"> <!-- reduced spacing -->
+
+                <ImageView
+                    android:id="@+id/btnSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/boxcontainer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/wordText2"
+                        android:text="Oblivious"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginRight="100sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/defText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Not knowing or not paying attention to something."
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 🟠 3rd Box -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"> <!-- reduced spacing -->
+
+                <ImageView
+                    android:id="@+id/btnThird"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/boxcontainer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/wordText3"
+                        android:text="Oblivious"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginRight="100sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/defText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Not knowing or not paying attention to something."
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 🟠 4th Box -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"> <!-- reduced spacing -->
+
+                <ImageView
+                    android:id="@+id/btnFourth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/boxcontainer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/wordText4"
+                        android:text="Oblivious"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginRight="100sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/defText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Not knowing or not paying attention to something."
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 🟠 5th Box -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"> <!-- reduced spacing -->
+
+                <ImageView
+                    android:id="@+id/btnFifth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/boxcontainer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/wordText5"
+                        android:text="Oblivious"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginRight="100sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/defText5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Not knowing or not paying attention to something."
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="8dp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 🟧 Navigation Section (unchanged) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/navigationView"
+            android:layout_width="389dp"
+            android:layout_height="116dp"
+            app:srcCompat="@drawable/screenshot_2025_11_07_155215"
+            android:layout_marginTop="19dp"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="-90dp">
+
+            <Button
+                android:id="@+id/homeNavBtn"
+                android:layout_width="95dp"
+                android:layout_height="65dp"
+                android:alpha=".5"
+                android:background="@android:color/transparent"
+
+                />
+
+            <Button
+                android:id="@+id/addWordNavBtn"
+                android:layout_width="95dp"
+                android:layout_height="65dp"
+                android:alpha=".5"
+                android:background="@android:color/transparent"
+                />
+
+            <Button
+                android:id="@+id/wordListNavBtn"
+                android:layout_width="95dp"
+                android:layout_height="65dp"
+                android:alpha=".5"
+                android:background="@android:color/transparent"
+                />
+
+            <Button
+                android:id="@+id/profileNavbtn"
+                android:layout_width="95dp"
+                android:layout_height="65dp"
+                android:alpha=".5"
+                android:background="@android:color/transparent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

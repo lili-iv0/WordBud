@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77009F"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StartActivity">
+
+<!-- Logo-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WordBud"
+        android:textSize="55dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/slackey"
+        android:textColor="@color/white"/>
+
+<!--TagLine-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grow your word garden,"
+        android:textSize="20dp"
+        android:layout_marginTop="-10dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="one bud at a time"
+        android:textSize="20dp"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"/>
+
+<!--Start Button-->
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="290dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        android:text="Get Started"
+        android:textSize="15sp"
+        android:textColor="#4F1F7A"
+        android:textStyle="bold" />
+
+<!-- Mascot -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="297dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/wordbud" />
+
+</LinearLayout>

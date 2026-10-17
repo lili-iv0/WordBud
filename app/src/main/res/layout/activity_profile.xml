@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- In your layout XML -->
+    <LinearLayout
+        android:layout_width="437dp"
+        android:layout_height="835dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/profile">
+        <!-- Your content here -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-850dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="180dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logout" />
+
+        <!-- username -->
+        <TextView
+            android:id="@+id/usernamePlaceHolder"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="left"
+            android:layout_marginLeft="7dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--   Navigation     -->
+    <ImageView
+        android:id="@+id/navigationView"
+        android:layout_width="389dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="705dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/screenshot_2025_11_07_155215" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-90dp">
+
+        <Button
+            android:id="@+id/homeNavBtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="7dp"
+            android:alpha=".5" />
+
+        <Button
+            android:id="@+id/addWordNavBtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:alpha=".5" />
+
+        <Button
+            android:id="@+id/wordListNavBtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:alpha=".5" />
+
+        <Button
+            android:id="@+id/profileNavbtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:alpha=".5" />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

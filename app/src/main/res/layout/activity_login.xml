@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+
+<!--logo-->
+    <ImageView
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/screenshot_2025_11_06_175228" />
+
+<!-- email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/poppins"
+        android:padding="13dp"/>
+
+<!-- password -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="20dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="13dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/rounded"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+<!--forgot pass-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:gravity="right"
+        android:padding="15dp"
+        android:text="Forgot Password?"
+        android:textColor="#4F1F7A" />
+
+<!--login btn-->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4F1F7A"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="LOGIN"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:text="────────────── Or ──────────────" />
+
+<!-- social media -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="196dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/screenshot_2025_11_04_104532" />
+
+<!-- register -->
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Dont have an Account? Click here"
+        />
+</LinearLayout>
